@@ -17,6 +17,7 @@ class GameManager{
     }
 
     update(){
+        this.canvas2d.fillRect(0, 0, this.canvas.width, this.canvas.height)
         this.player.update(this.inputManager)
         this.player.renderer.render()
     }
